@@ -56,3 +56,19 @@ else:
     print("Price: " + str(dPrse)) # PriceInRobux
 if dType != 9:
     print("Status: " + dStatOP) # IsForSale & IsLimited & IsLimitedUnique
+class visual_App(tkinter.Frame):
+    def __init__(self, master=None):
+        super().__init__(master)
+        self.master = master
+        self.pack()
+        self.create_Widgets()
+    def create_Widgets(self):
+        self.ID_Box = tkinter.Text(root, height=1, width=9)
+        self.ID_Box.pack()
+class commands():
+    def getInfo():
+        print("Placeholder")
+
+root = tkinter.Tk()
+app = visual_App(master=root)
+app.mainloop()
