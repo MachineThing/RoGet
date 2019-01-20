@@ -2,9 +2,9 @@
 RoGet.py    A test with Roblox's Marketplace API
 By          Mason Fisher
 Created:    Jan 16th, 2019
-Modified:   Jan 16th, 2019
+Modified:   Jan 20th, 2019
 """
-import urllib.request, json
+import urllib.request, json, tkinter
 from sys import exit
 try:
     RobloxID = str(int(input("ID of Roblox item: ")))
@@ -54,6 +54,5 @@ if str(dPrse) == "0" or str(dPrse) == "null":
     print("Price: free") # PriceInRobux
 else:
     print("Price: " + str(dPrse)) # PriceInRobux
-print("Membership Level: ")
 if dType != 9:
     print("Status: " + dStatOP) # IsForSale & IsLimited & IsLimitedUnique
